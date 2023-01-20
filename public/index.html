@@ -13,6 +13,10 @@
     <div id="vue-instance">
       <div class="chat-container full-width" ref="chatContainer">
         <div class="title-header">
+          <h1>CHATROOM</h1>
+      <div class="room-select">
+        <input type="text" class="full-width" placeholder="Room Name" id="room-input" v-model="pendingRoom" @keyup.enter="joinRoom()">
+        <input class="yellow-button full-width" type="submit" v-on:click="joinRoom()" value="JOIN">
           <h1>ENCRYPTED CHAT</h1>
         </div>
         <div class="message-list">
@@ -25,10 +29,7 @@
         </div>
       </div>
       <div class="info-container full-width">
-      <h1>CHATROOM</h1>
-      <div class="room-select">
-        <input type="text" class="full-width" placeholder="Room Name" id="room-input" v-model="pendingRoom" @keyup.enter="joinRoom()">
-        <input class="yellow-button full-width" type="submit" v-on:click="joinRoom()" value="JOIN">
+      
       </div>
       
       <div class="flex-fill"></div>
