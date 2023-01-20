@@ -17,6 +17,7 @@
       <div class="room-select">
         <input type="text" class="full-width" placeholder="Room Name" id="room-input" v-model="pendingRoom" @keyup.enter="joinRoom()">
         <input class="yellow-button full-width" type="submit" v-on:click="joinRoom()" value="JOIN">
+        <br>
           <h1>ENCRYPTED CHAT</h1>
         </div>
         <div class="message-list">
@@ -27,9 +28,6 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="info-container full-width">
-      
       </div>
       
       <div class="flex-fill"></div>
