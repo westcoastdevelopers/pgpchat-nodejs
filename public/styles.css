@@ -194,27 +194,3 @@ p { font-size: x-small; }
 .message-list {
   margin-bottom: 40px;
 }
-
-@media only screen and (max-width: 600px) {
- .chat-container {
-  flex: 0 0 80%;
-  word-wrap: break-word;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding: 6px;
-  margin-bottom: 50px;
-}
-  .info-container {
-  flex: 0 0 20%;
-  border-left: solid 1px var(--light-grey);
-  padding: 12px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  margin-bottom: 50px;
-  position: relative;
-  justify-content: space-around;
-  display: flex;
-  flex-direction: column;
-}
-}
-
