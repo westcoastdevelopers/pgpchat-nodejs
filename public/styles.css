@@ -48,7 +48,7 @@ p { font-size: x-small; }
 
 /** Chat Window **/
 .chat-container {
-  flex: 0 0 60%;
+  flex: 0 0 90%;
   word-wrap: break-word;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -64,7 +64,7 @@ p { font-size: x-small; }
 
 /* Info Panel */
 .info-container {
-  flex: 0 0 40%;
+  flex: 0 0 10%;
   border-left: solid 1px var(--light-grey);
   padding: 12px;
   overflow-x: hidden;
