@@ -12,7 +12,7 @@ An understanding of how to utilize strong encryption is essential for modern sof
 
 In this tutorial, we will walk through the basic concepts and implementation of an end-to-end 2048-bit [RSA encrypted](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) messenger. We'll be utilizing [Vue.js](https://vuejs.org/) for coordinating the frontend functionality along with a [Node.js](https://nodejs.org/en/) backend using [Socket.io](https://socket.io/) for sending messages between users.
 
-- Live Demo - https://phpchat.drewjones.cmom
+- Live Demo - https://pgpchat.drewjones.cmom
 
 
 The concepts that we are covering in this tutorial are implemented in Javascript and are mostly intended to be platform-agnostic.  We will be building a traditional browser-based web app, but you can adapt this code to work within a pre-built desktop (using [Electron](https://electronjs.org/)) or mobile ( [React Native](https://facebook.github.io/react-native/), [Ionic](https://ionicframework.com/), [Cordova](https://cordova.apache.org/)) application binary if you are concerned about browser-based application security.[^1]  Likewise, implementing similar functionality in another programming language should be relatively straightforward since most languages have reputable open-source encryption libraries available; the base syntax will change but the core concepts remain universal.
