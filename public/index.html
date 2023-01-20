@@ -13,12 +13,8 @@
     <div id="vue-instance">
       <div class="chat-container full-width" ref="chatContainer">
         <div class="title-header">
-          <h1>CHATROOM</h1>
-      <div class="room-select">
-        <input type="text" class="full-width" placeholder="Room Name" id="room-input" v-model="pendingRoom" @keyup.enter="joinRoom()">
-        <input class="yellow-button full-width" type="submit" v-on:click="joinRoom()" value="JOIN">
-        <br>
           <h1>ENCRYPTED CHAT</h1>
+          
         </div>
         <div class="message-list">
           <div class="message full-width" v-for="message in messages">
@@ -29,7 +25,20 @@
           </div>
         </div>
       </div>
-      
+      <div class="info-container full-width">
+      <h1>CHATROOM</h1>
+      <div class="room-select">
+        <input type="text" class="full-width" placeholder="Room Name" id="room-input" v-model="pendingRoom" @keyup.enter="joinRoom()">
+        <input class="yellow-button full-width" type="submit" v-on:click="joinRoom()" value="JOIN">
+      </div>
+      <div class="divider"></div>
+      <div class="notification-list" ref="notificationContainer">
+        <h1>NOTIFICATION LOG</h1>
+        <div class="notification full-width" v-for="notification in notifications">
+          <div class="notification-timestamp">{{ notification.timestamp }}</div>
+          <div class="notification-message">{{ notification.message }}</div>
+        </div>
+      </div>
       <div class="flex-fill"></div>
       <div class="divider"></div>
       <div class="keys full-width">
